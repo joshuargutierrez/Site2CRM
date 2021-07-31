@@ -1,7 +1,7 @@
 === Site2CRM-PRO ===
 Contributors: joshuarg007
-Plugin Name: Site2CRM-PRO
-Donate link: https://www.site2crm.com
+Plugin Name: Site2CRM
+Donate link: https://www.joshuarg.net/site2crm
 Tags: comments, spam
 Requires at least: 2.3
 Requires PHP: 5.2.4
@@ -14,7 +14,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template that can be added to any page. When the form is submitted a lead, contact, and company is created inside the users CRM, an email is sent to the administrator, and the data is stored to their local database as a custom 'lead' post type.
 
 == Installation ==
-1. Download Site2CRM-PRO.zip from https://www.site2crm.com/pro
+1. Download Site2CRM-PRO.zip from https://www.joshuarg.net/site2crm
 2. Extract the .zip file to any location
 3. Upload the extracted plugin files to the `/wp-content/plugins/site2CRM-PRO ` directory. (Do Not include the Site2CRM folder in the directory; just its contents: admin, assets, form, handler, index.php, License.txt, readme.txt, and Site2CRM-PRO.php) - Location should be wordpress/wp-content/plugins/Site2CRM-PRO/{All Plugin Files}
 4. Activate the plugin through the 'Plugins' screen in WordPress
@@ -60,4 +60,4 @@ CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template 
     Site2CRM will store all your form submissions in your local WP database. They can be accessed by clicking on the Site2CRM analytics in your WP dashboard.
 
 == Download==
-https://www.site2crm.com/pro
+https://www.joshuarg.net/site2crm
