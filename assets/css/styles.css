@@ -1,0 +1,32 @@
+.wp-list-table{
+    overflow-x: scroll;
+    min-width:100%;
+    max-width:3000%;
+    width:auto;
+}
+th,.wp-list-table{
+    overflow-x:scroll;
+}
+.site2crm-form-fields-option-value{
+    width:7.0vw;
+    display:inline-block;
+    margin-bottom:1vh;
+}
+.site2crm-form-fields-form{
+    display:inline-block;
+}
+.site2crm-choose-crm-radio{
+    margin-bottom:4vh;
+}
+#site2crm-choose-crm-image-nutshell{
+    position:relative;
+    bottom:-0.7em;
+}
+#site2crm-choose-crm-image-pipedrive{
+    position:relative;
+    bottom:-0.9em;
+}
+#site2crm-choose-crm-image-hubspot{
+   position:relative;
+   bottom:-1.6em; 
+}
