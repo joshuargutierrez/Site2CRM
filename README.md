@@ -32,8 +32,10 @@ CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template 
 6. Site2CRM Admin choose redirect path on form submission (running with WordPress 7.0 here) - Choose-Redirect-Path-Screenshot.png
 
 #  Changelog
+	...
 
 #  Frequently Asked Questions 
+	...
 # How many leads can be created with Site2CRM?
     Site2CRM allows only 30 leads to be created per month in your CRM, 
 	however on the first of each month only one of your leads created will be 
