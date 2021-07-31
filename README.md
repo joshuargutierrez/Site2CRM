@@ -35,9 +35,9 @@ CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template 
 	...
 
 #  Frequently Asked Questions 
-## How many leads can be created with Site2CRM?
+	## How many leads can be created with Site2CRM?
     Site2CRM allows unlimited leads to be created per month in your CRM..
-## What is Site2CRM?
+	## What is Site2CRM?
     Site2CRM is a user friendly lead/deal creation tool that connects the web 
 	form on your website directly to your CRM. This way when your visitors to 
 	your site fill out a web form you will not have to worry about manually 
