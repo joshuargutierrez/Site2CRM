@@ -51,8 +51,8 @@ CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template 
 	your Site2CRM Analytics, and email the data to you in a user friendly easy 
 	to read format.
 # Which CRMs are compatible with Site2CRM?
-    Site2CRM is currently fully operational with *Nutshell CRM*, *Hubspot CRM*, and 
-	*Pipedrive CRM*. However, further integrations will be available soon. Please 
+    Site2CRM is currently fully operational with **Nutshell CRM**, **Hubspot CRM**, and 
+	**Pipedrive CRM**. However, further integrations will be available soon. Please 
 	sign up for our Newsletter for information on future releases.
 # How do I choose which CRM I am currently using?
     Simply click on the Choose your CRM tab under the Site2CRM Admin tab. On that 
