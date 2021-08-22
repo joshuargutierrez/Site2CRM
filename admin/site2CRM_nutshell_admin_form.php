@@ -3,7 +3,10 @@
 defined( 'ABSPATH' ) or die( '::NO INDIRECT ACCESS ALLOWED::' );
 echo '<div class="wrap"></br>';
 include 'site2CRM_logo.php';
-echo '<h1>Site2CRM Admin Panel for NutshellCRM <img style="position:fixed; right:2vw; bottom:14vh;" alt="logo" src="https://site2crm.com/wp-content/uploads/2019/07/nutshell_logo_long.png" ></img></h1></br>';
+$dir = plugin_dir_url( __DIR__ ).'assets/images/nutshell_logo_long.png';
+echo '<h1>Site2CRM Admin Panel for NutshellCRM <img style="position:fixed; right:2vw; bottom:14vh;" alt="" src="';
+echo $dir;
+echo '"></img></h1></br>';
 echo '<hr>';
 echo '<h2>API Data</h2>';
 echo '<h4>&nbsp;To allow this plug-in to create leads in your NutshellCRM account, </br>';

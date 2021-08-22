@@ -1,8 +1,7 @@
 #  Site2CRM-PRO
-Contributors: joshuarg007
+Contributors: Joshua R. Gutierrez
 Plugin Name: Site2CRM
 Donate link: https://www.joshuarg.net/site2crm
-Tags: comments, spam
 Requires at least: 2.3
 Requires PHP: 5.2.4
 Tested up to: 5.3
@@ -21,7 +20,7 @@ CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template 
 5. Use the Settings->Site2CRM Admin screen to configure the plugin
 
 #  Upgrade Notice
-#  0.1 # 
+##  1.0
 
 #  Screenshots 
 1. Site2CRM Admin choose your current CRM (running with WordPress 7.0 here) - Choose-your-CRM-Screenshot.png
