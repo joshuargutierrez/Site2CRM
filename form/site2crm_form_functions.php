@@ -1,13 +1,5 @@
 <?php
-/*
-Plugin Name: Page Template Plugin : 'Site2CRM_Form'
-Plugin URI: https://site2crm.com
-Version: 3.2
-Author: Site2CRM
-Author URI: Attributed to Harri Bell-Thomas with WPExplorer.com - https://www.wpexplorer.com/wordpress-page-templates-plugin/?unapproved=232710&moderation-hash=1e963469f4cfc9159888b42344026cb8#comment-232710
 
-
-*/
 defined( 'ABSPATH' ) or die( '::NO INDIRECT ACCESS ALLOWED::' );
 class PageTemplater {
 

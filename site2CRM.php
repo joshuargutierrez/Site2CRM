@@ -1,22 +1,24 @@
 <?php
-/**
- * Plugin Name: Site2CRM-PRO
- * Plugin URI:  https://joshuarg.net/site2crm
- * Description: CRM Lead Creation with Web Form
- * Version:     1.0
- * Author:      Site2CRM
- * Author URI:  https://joshuarg.net/site2crm
- * Text Domain: Site2CRM.com
- * Domain Path: /languages
- * 
- * Copyright (C) 2019  Site2CRM
- */
+/*
+Plugin Name: Site2CRM
+Plugin URI: http://joshuarg.net/wordpress-plugins/site2crm
+Description: CRM Lead creation and web form
+Version: 1.1.0
+Author: Joshua Gutierrez
+Author URI: http://joshuarg.net
+Text Domain: site2crm
+Domain Path: /lang/
+
+Copyright 2019 Joshua R G
+*/
+ 
 defined( 'ABSPATH' ) or die( '::NO INDIRECT ACCESS ALLOWED::' );
 
 require_once 'admin/options.php';
 require_once 'admin/analytics_functions.php';
 require_once 'handler/site2crm_handler.php';
 require_once 'form/site2crm_form_functions.php';
+require_once 'form/site2crm_shortcode_form.php';
 
 //Create a CRM lead/deal object on form submission for logged in users
 add_action( 'admin_post_create_lead', 'site2CRM_create_lead' );
@@ -33,7 +35,7 @@ add_action( 'admin_post_nopriv_site2crm_redirect', 'site2crm_redirect');
 //Initialize Custom Post Type (CPT) 'lead'
 add_action( 'init', 'site2crm_cpt_init' );
 
-//Sets columns for viewing CTP 'lead'
+//Sets columns for viewing CPT 'lead'
 add_action( 'manage_lead_posts_custom_column', 'site2crm_manage_lead_columns', 10, 2 );
 
 //Add custom css for admin sections
@@ -47,6 +49,17 @@ add_filter( 'post_updated_messages', 'codex_lead_updated_messages' );
 
 //determine which columns will be displayed when viewing CPT 'lead' 
 add_filter( 'manage_edit-lead_columns', 'site2crm_edit_lead_columns' ) ;
+
+// create shortcode for adding form to page with other content
+function shortcodes_init(){
+
+    add_shortcode('Site2CRM_web_form', 'site2crm_shortcode_form_function');
+} // end function shortcode_init
+
+add_action('init', 'shortcodes_init');
+
+
+
 
 //add stylesheet
 function site2crm_add_stylesheet_to_admin() {

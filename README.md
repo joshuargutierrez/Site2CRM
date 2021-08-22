@@ -1,8 +1,7 @@
 #  Site2CRM-PRO
-Contributors: joshuarg007
+Contributors: Joshua R. Gutierrez
 Plugin Name: Site2CRM
 Donate link: https://www.joshuarg.net/site2crm
-Tags: comments, spam
 Requires at least: 2.3
 Requires PHP: 5.2.4
 Tested up to: 5.3
@@ -21,7 +20,7 @@ CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template 
 5. Use the Settings->Site2CRM Admin screen to configure the plugin
 
 #  Upgrade Notice
-#  0.1 # 
+##  1.0
 
 #  Screenshots 
 1. Site2CRM Admin choose your current CRM (running with WordPress 7.0 here) - Choose-your-CRM-Screenshot.png
@@ -64,10 +63,14 @@ CRM Lead Creation, and web form. Site2CRM-PRO includes a built in form template 
 	and click Update API Key. your current username and API token should be displayed 
 	at the top of the page beneath the API data section
 ## How do I add a web form to my site?
-    Site2CRM comes with a user friendly form that connects directly to your CRM. To 
-	add your form go to the Pages tab on your WP dashboard. Hover over the page you 
-	wish to add your form to, and click Quick Edit. In the template section select 
-	Site2CRM_form, then click Update. Your form will now be visible on the page you chose.
+    - *Option 1* Site2CRM comes with a user friendly form that connects directly to your CRM. To 
+	  add your form go to the Pages tab on your WP dashboard. Hover over the page you 
+	  wish to add your form to, and click Quick Edit. In the template section select 
+	  Site2CRM_form, then click Update. Your form will now be visible on the page you chose.
+	  
+	- *Option 2* Simply add the shortcode [Site2CRM_web_form] to any page to add a Site2CRM 
+	  Form to that page. The form will reroute people to the page chosen in 'redirect settings'.
+	  
 ## How do I add fields to my web form?
     Just click on Form Fields under the Site2CRM Admin tab. Then click on the checkbox 
 	on the left of the fields that you want included, click the checkbox on the right 
