@@ -3,7 +3,7 @@ defined( 'ABSPATH' ) or die( '::NO INDIRECT ACCESS ALLOWED::' );
 /**
  * * Copyright (C) 2019  Site2CRM
  * 
- */
+ */  
 
 /** 
  * Lead update messages.
@@ -83,21 +83,22 @@ function site2crm_cpt_init() {
 		'description'        => __( 'Lead', 'joshuarg.net/site2crm' ),
 		'public'             => false,
 		'exclude_from_search'=> true,
-		'publicly_queryable' => false,
+		'publicly_queryable' => true,
 		'show_in_nav_menus'  => false,
 		'show_ui'            => true,
-		'show_in_menu'       => true,
-		'query_var'          => false,
+		'show_in_menu'       => 'site2CRM-admin',
+		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'lead' ),
 		'capability_type' => 'post',
         'capabilities' => array(
-            'create_posts' => false,
+            'create_posts'   => false,
+			'edit_posts'     => true,
         ),
 		'map_meta_cap' => true,
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => 22,
-		'menu_icon'          => 'dashicons-rest-api',
+		# 'menu_icon'          => 'dashicons-rest-api',
 		'supports'           => array( 'title', 'custom-fields', 'revisions' )
 	);
 

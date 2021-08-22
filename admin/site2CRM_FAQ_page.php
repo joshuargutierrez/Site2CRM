@@ -41,10 +41,19 @@ echo '&nbsp;&nbsp;&nbsp; - Whichever CRM you use allows you to create an API '
 echo '<hr>';
 echo '<h3>How do I add a web form to my site?</h3>';
 echo '&nbsp;&nbsp;&nbsp; - Site2CRM comes with a user friendly form that connects '
-. 'directly to your CRM.  To add your form go to the <i>Pages</i> tab on your WP '
-. 'dashboard.  Hover over the page you wish to add your form to, and click '
-. '<i>Quick Edit</i>. In the template section select Site2CRM_form, then click '
-. '<i>Update</i>.  Your form will now be visible on the page you chose. ';
+. 'directly to your CRM.  To add your form, either: 
+	<ol>
+		<li>
+			Paste the shortcode [Site2CRM_web_form] into any page on your site, and a 
+			Site2CRM form will be added to that page.
+		</li>
+		<li>
+		  go the <i>Pages</i> tab on your WP '
+		. 'dashboard.  Hover over the page you wish to add your form to, and click '
+		. '<i>Quick Edit</i>. In the template section select Site2CRM_form, then click '
+		. '<i>Update</i>.  Your form will now be visible on the page you chose. 
+		</li>
+	</ol>';
 echo '<hr>';
 echo '<h3>How do I add fields to my web form?</h3>';
 echo '&nbsp;&nbsp;&nbsp; - Just click on <i>Form Fields</i> under the <i>Site2CRM '

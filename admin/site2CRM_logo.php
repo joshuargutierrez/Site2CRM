@@ -11,7 +11,7 @@ if((int)get_option('Site2CRM_upload_limit')>30){
                 target=_BLANK>GO PRO for Unlimited Lead Creation in '.get_option('site2CRM_user_CRM').'!</a> 
         </p></div>';
 }
-$dir = $dir = plugin_dir_url( __DIR__ ).'assets/images/Site2CRM-Logo.png';
+$dir = plugin_dir_url( __DIR__ ).'assets/images/Site2CRM-Logo.png';
 echo '<img style="position:fixed; right:6vw; bottom:4vh; height:10%;" alt="Site2CRM" src="';
 echo $dir;
 echo '" ></img>';

@@ -70,12 +70,12 @@ function site2CRM_register_site2crm_options_settings() {
  * create admin menu and submenus
  */
 function site2CRM_plugin_menu() {
-    add_menu_page( 'Site2CRM Plugin Settings', ' Site2CRM Admin', null, 'site2CRM-admin', null, ' 	dashicons-rest-api', 21);
+    add_menu_page( 'Site2CRM Plugin Settings', ' Site2CRM', 'manage_options', 'site2CRM-admin', 'site2crm_display_faq_page', 'dashicons-rest-api', 21);
     add_submenu_page('site2CRM-admin', 'Site2CRM Choose CRM', 'Choose your CRM', 'manage_options', 'Site2CRM_CHOOSE_CRM_Page', 'site2crm_display_choose_crm_page');    
     add_submenu_page('site2CRM-admin', 'Site2CRM API Settings', ' API Settings', 'manage_options', 'Site2CRM_API_Settings', 'site2crm_display_api_settings');    
     add_submenu_page('site2CRM-admin', 'Site2CRM Form Fields', ' Form Fields', 'manage_options', 'Site2CRM_Form_Field_Settings', 'site2crm_display_form_fields');    
     add_submenu_page('site2CRM-admin', 'Site2CRM Redirect Settings', ' Redirect Settings', 'manage_options', 'site2crm_display_redirect_settings', 'site2crm_display_redirect_settings');    
-    add_submenu_page('site2CRM-admin', 'Site2CRM FAQ Page', 'FAQ', 'manage_options', 'Site2CRM_FAQ_Page', 'site2crm_display_faq_page');    
+    # add_submenu_page('site2CRM-admin', 'Site2CRM FAQ Page', 'FAQ', 'manage_options', 'Site2CRM_FAQ_Page', 'site2crm_display_faq_page');    
 }
 /**
  * display choose CRM page
