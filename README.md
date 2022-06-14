@@ -1,4 +1,4 @@
-#  Site2CRM-PRO
+#  Site2CRM
 Contributors: Joshua R. Gutierrez
 Plugin Name: Site2CRM
 Donate link: https://www.joshuarg.net/site2crm

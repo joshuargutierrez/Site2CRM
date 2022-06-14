@@ -7,11 +7,11 @@ Version: 1.1.0
 Author: Joshua Gutierrez
 Author URI: http://joshuarg.net
 Text Domain: site2crm
-Domain Path: /lang/
+Domain Path: /lang
 
 Copyright 2019 Joshua R G
 */
- 
+
 defined( 'ABSPATH' ) or die( '::NO INDIRECT ACCESS ALLOWED::' );
 
 require_once 'admin/options.php';
@@ -41,6 +41,9 @@ add_action( 'manage_lead_posts_custom_column', 'site2crm_manage_lead_columns', 1
 //Add custom css for admin sections
 add_action( 'admin_enqueue_scripts', 'site2crm_add_stylesheet_to_admin' );
 
+//Add custom JS for admin sections
+add_action( 'admin_menu', 'site2crm_add_jquery_to_admin' );
+
 //Ensure CPT gets added to the DB on hook activation
 register_activation_hook( __FILE__, 'site2crm_rewrite_flush' );
 
@@ -51,17 +54,25 @@ add_filter( 'post_updated_messages', 'codex_lead_updated_messages' );
 add_filter( 'manage_edit-lead_columns', 'site2crm_edit_lead_columns' ) ;
 
 // create shortcode for adding form to page with other content
-function shortcodes_init(){
-
+function shortcodes_init()
+{
     add_shortcode('Site2CRM_web_form', 'site2crm_shortcode_form_function');
+
 } // end function shortcode_init
 
 add_action('init', 'shortcodes_init');
 
-
-
-
 //add stylesheet
-function site2crm_add_stylesheet_to_admin() {
-    wp_enqueue_style( 'prefix-style', plugins_url('assets/css/styles.css', __FILE__) );
+function site2crm_add_stylesheet_to_admin() 
+{
+    wp_enqueue_style( 'prefix-style', plugins_url('assets/css/site2crm_styles.css', __FILE__) );
 }
+
+// Add JavaScript
+function site2crm_add_jquery_to_admin( $hook ) 
+{
+    wp_register_script( 'site2crm_jquery', plugins_url( 'assets/js/site2crm_jquery.js', __FILE__ ), array( 'jquery' ));
+
+    wp_enqueue_script( 'site2crm_jquery' );
+}
+

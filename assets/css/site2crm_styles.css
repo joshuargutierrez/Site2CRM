@@ -1,0 +1,88 @@
+.wp-list-table{
+    overflow-x: scroll;
+    min-width:100%;
+    max-width:3000%;
+    width:auto;
+}
+th,.wp-list-table{
+    overflow-x:scroll;
+}
+.site2crm-form-fields-option-value{
+    width:7.0vw;
+    display:inline-block;
+    margin-bottom:1vh;
+}
+.site2crm-form-fields-form{
+    display:inline-block;
+}
+
+#site2crm-choose-crm-image-nutshell{
+    position:relative;
+    bottom:-0.7em;
+}
+#site2crm-choose-crm-image-pipedrive{
+    position:relative;
+    bottom:-0.9em;
+}
+#site2crm-choose-crm-image-hubspot{
+   position:relative;
+   bottom:-1.6em; 
+}
+
+.site2crm-crm-username-label{
+    font-size:1.5em;
+    
+}
+
+
+
+/** choosecrm submit button **/
+.choose-crm-submit, .site2crm-admin-submit{
+    margin-left: 20px !important;
+    background-color: #c1272d !important;
+    text-shadow: 1px 1px 1px #000 !important;
+    color: white !important;
+    border: 1px inset #c1272d !important;
+    margin-top:0;
+}
+.choose-crm-submit:hover, .site2crm-admin-submit:hover{
+    background-color: #4d4d4d !important;
+    text-shadow: 1px 1px 1px #000 !important;
+    border: 1px inset #4d4d4d !important;
+}
+.choose-crm-submit{
+    margin-left: 20px !important;
+}
+/** END choosecrm submit button **/
+
+/** choosecrm radio buttons **/
+.site2crm-choose-crm-radio{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin:6px !important;
+    
+}
+
+.site2crm-choose-crm-radio + img{
+    cursor: pointer;
+    outline: 1px solid #000;
+    border-radius: 8px;
+    background-color: #adadad
+}
+
+.site2crm-choose-crm-radio:checked + img{
+    outline: 2px dashed #c1272d;
+}
+
+.site2crm-radio-button-label img{
+    padding:6px;
+    top:0;
+    margin-right:12px;
+    min-width:150px;
+    max-width:150px;
+    min-height:40px;
+    max-height:40px;
+}
+/** END choosecrm radio buttons **/

@@ -130,10 +130,7 @@ function site2crm_verify_credentials(){
             wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
     }
 }
-//reset upload limit on first of month - unlimitd lead creation on first of month
-if(date('j', $timestamp) === '1'){
-    update_option('Site2CRM_upload_limit', 0);
-}
+
 //add options to wp_options table in DB
 add_option('nutshellcrm_username');
 add_option('nutshellcrm_api_key');
