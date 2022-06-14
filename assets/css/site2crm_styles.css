@@ -34,46 +34,90 @@ th,.wp-list-table{
     
 }
 
+.site2crm-warning{
+    color: white !important;
+    text-shadow: 1px 1px 2px red;
+}
 
+.site2crm-choose-crm-form{
+    margin-left:20px;
+}
+
+.site2crm-admin-page + div{
+    display: inline !important;
+}
+
+.site2crm-admin-page-section{
+    width:auto;
+    border: 1px outset #6a6a6a;
+    background-color: rgb(174, 174, 174);
+    border-radius: 9px;
+    text-align:center;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    overflow-x: hidden;
+}
+
+.site2crm-admin-page-section-header{
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 1px rgb(189, 187, 187);
+    width:100%;
+    border-bottom: 1px inset black;
+}
+
+.site2crm-admin-page-section-subheader{
+    text-shadow: 1px 0px 3px lightgray;
+    color: black;
+}
 
 /** choosecrm submit button **/
 .choose-crm-submit, .site2crm-admin-submit{
-    margin-left: 20px !important;
+    margin-left: 33% !important;
     background-color: #c1272d !important;
     text-shadow: 1px 1px 1px #000 !important;
     color: white !important;
     border: 1px inset #c1272d !important;
     margin-top:0; 
+    box-shadow: 8px 8px 14px gray, 0 0 5px black;
 }
 .choose-crm-submit:hover, .site2crm-admin-submit:hover{
-    background-color: #4d4d4d !important;
+    background-color: #c7454a !important;
     text-shadow: 1px 1px 1px #000 !important;
     border: 1px inset #4d4d4d !important;
+    box-shadow: 4px 4px 7px gray, 0 0 2px black;
 }
 .choose-crm-submit{
-    margin-left: 20px !important;
+    margin-left: 25% !important;
 }
 /** END choosecrm submit button **/
 
 /** choosecrm radio buttons **/
 .site2crm-choose-crm-radio{
-    position: absolute;
+    position: relative;
     opacity: 0;
     width: 0;
     height: 0;
     margin:6px !important;
-    
+    width:auto;
 }
 
 .site2crm-choose-crm-radio + img{
     cursor: pointer;
-    outline: 1px solid #000;
-    border-radius: 8px;
-    background-color: #adadad
+    outline: 2px outset #adadad;
+    border-radius: 6px;
+    background-color: #adadad;
+    box-shadow: 8px 6px 9px gray, 0 0 5px black;
+}
+
+.site2crm-choose-crm-radio + img:hover{
+    box-shadow: 4px 3px 7px gray, 0 0 2px black;
 }
 
 .site2crm-choose-crm-radio:checked + img{
-    outline: 2px dashed #c1272d;
+    outline: 2px dashed rgb(176, 59, 59);
+    box-shadow: 4px 3px 7px gray, 0 0 2px black;
 }
 
 .site2crm-radio-button-label img{
