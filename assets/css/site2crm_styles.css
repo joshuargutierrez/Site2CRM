@@ -1,56 +1,26 @@
-.wp-list-table{
-    overflow-x: scroll;
-    min-width:100%;
-    max-width:3000%;
-    width:auto;
-}
-th,.wp-list-table{
-    overflow-x:scroll;
-}
-.site2crm-form-fields-option-value{
-    width:7.0vw;
-    display:inline-block;
-    margin-bottom:1vh;
-}
-.site2crm-form-fields-form{
-    display:inline-block;
-}
-
-#site2crm-choose-crm-image-nutshell{
-    position:relative;
-    bottom:-0.7em;
-}
-#site2crm-choose-crm-image-pipedrive{
-    position:relative;
-    bottom:-0.9em;
-}
-#site2crm-choose-crm-image-hubspot{
-   position:relative;
-   bottom:-1.6em; 
-}
-
-.site2crm-crm-username-label{
-    font-size:1.5em;
-    
-}
-
+/** Misc. Styles *************************************/
 .site2crm-warning{
     color: white !important;
     text-shadow: 1px 1px 2px red;
+    margin-left: 3% !important;
+    overflow-x: none;
+    white-space: nowrap;
 }
+/** END Misc. Styles *********************************/
 
-.site2crm-choose-crm-form{
-    margin-left:20px;
-}
 
-.site2crm-admin-page + div{
-    display: inline !important;
+/** Admin Page ****************************************/
+.site2crm-admin-page{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .site2crm-admin-page-section{
+    position: relative;
     width:auto;
-    border: 1px outset #6a6a6a;
+    border: 1px inset #6a6a6a;
     background-color: rgb(174, 174, 174);
+    background-color: rgba(174, 174, 174, 0.5);
     border-radius: 9px;
     text-align:center;
     -webkit-user-select: none; /* Safari */        
@@ -58,48 +28,45 @@ th,.wp-list-table{
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
     overflow-x: hidden;
+    overflow-y: auto;
+    min-width: 350px;
+    max-width: 350px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 15px;
+    margin-bottom:15px;
+    max-height:340px !important;
+    min-height:340px !important;
 }
+
 
 .site2crm-admin-page-section-header{
     font-weight: 700 !important;
+    padding-left: 18px !important;
     text-shadow: 1px 1px 1px rgb(189, 187, 187);
     width:100%;
-    border-bottom: 1px inset black;
 }
 
 .site2crm-admin-page-section-subheader{
+    position:relative;
     text-shadow: 1px 0px 3px lightgray;
     color: black;
 }
 
-/** choosecrm submit button **/
-.choose-crm-submit, .site2crm-admin-submit{
-    margin-left: 33% !important;
-    background-color: #c1272d !important;
-    text-shadow: 1px 1px 1px #000 !important;
-    color: white !important;
-    border: 1px inset #c1272d !important;
-    margin-top:0; 
-    box-shadow: 8px 8px 14px gray, 0 0 5px black;
-}
-.choose-crm-submit:hover, .site2crm-admin-submit:hover{
-    background-color: #c7454a !important;
-    text-shadow: 1px 1px 1px #000 !important;
-    border: 1px inset #4d4d4d !important;
-    box-shadow: 4px 4px 7px gray, 0 0 2px black;
-}
-.choose-crm-submit{
-    margin-left: 25% !important;
-}
-/** END choosecrm submit button **/
+/** END Admin Page  ************************************/
 
-/** choosecrm radio buttons **/
+/** Admin Section *************************************/
+.site2crm-choose-crm-form{
+    width:auto;
+    text-align: center;
+    align-content: center;
+}
+
 .site2crm-choose-crm-radio{
-    position: relative;
     opacity: 0;
     width: 0;
     height: 0;
-    margin:6px !important;
+    margin:1% 1% 0 1% !important;
     width:auto;
 }
 
@@ -122,11 +89,74 @@ th,.wp-list-table{
 
 .site2crm-radio-button-label img{
     padding:6px;
-    top:0;
-    margin-right:12px;
     min-width:150px;
     max-width:150px;
     min-height:40px;
     max-height:40px;
 }
-/** END choosecrm radio buttons **/
+/** END Admin Section ********************************/
+
+/** Analytics Styles *********************************/
+.wp-list-table{
+    overflow-x: scroll;
+    min-width:100%;
+    max-width:3000%;
+    width:auto;
+}
+th,.wp-list-table{
+    overflow-x:scroll;
+}
+/** END Analytics Styles ******************************/
+
+
+
+/** Form Fields ***************************************/
+.site2crm-form-fields-option-value{
+    width:7.0vw;
+    display:inline-block;
+    margin-bottom:1vh;
+}
+.site2crm-form-fields-form{
+    display:inline-block;
+}
+#site2crm_redirect_path select{
+    background-color: #4d4d4d;
+    color:azure !important;
+    text-align: center;
+}
+/** END Form Fields ***********************************/
+
+
+
+/** API Settings **************************************/
+.site2crm-crm-username-label{
+    font-size:1.5em;
+    
+}
+/** END API Settings **********************************/
+
+
+/** Site2CRM submit button ****************************/
+.form-redirect-submit, .choose-crm-submit, .site2crm-admin-submit{
+    background-color: #c1272d !important;
+    text-shadow: 1px 1px 1px #000 !important;
+    color: white !important;
+    border: 1px inset #c1272d !important;
+    margin-top:0; 
+    box-shadow: 8px 8px 14px gray, 0 0 5px black;
+    width: auto;
+    min-width:150px;
+    max-width:150px;
+    margin-top: 15px !important;
+    margin-left: 27px !important;
+}
+.form-redirect-submit{
+    margin-left: 0 !important;
+}
+.choose-crm-submit:hover, .site2crm-admin-submit:hover{
+    background-color: #c7454a !important;
+    text-shadow: 1px 1px 1px #000 !important;
+    border: 1px inset #4d4d4d !important;
+    box-shadow: 4px 4px 7px gray, 0 0 2px black;
+}
+/** END Site2CRM submit button ************************/

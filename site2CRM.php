@@ -44,6 +44,9 @@ add_action( 'admin_enqueue_scripts', 'site2crm_add_stylesheet_to_admin' );
 //Add custom JS for admin sections
 add_action( 'admin_menu', 'site2crm_add_jquery_to_admin' );
 
+// Jquery sortable
+add_action('wp_enqueue_scripts','enqueue_site2crm_scripts_jqueryUI_sortable');
+
 //Ensure CPT gets added to the DB on hook activation
 register_activation_hook( __FILE__, 'site2crm_rewrite_flush' );
 
@@ -74,5 +77,12 @@ function site2crm_add_jquery_to_admin( $hook )
     wp_register_script( 'site2crm_jquery', plugins_url( 'assets/js/site2crm_jquery.js', __FILE__ ), array( 'jquery' ));
 
     wp_enqueue_script( 'site2crm_jquery' );
+
+    wp_enqueue_script('jquery-ui');
 }
 
+function enqueue_site2crm_scripts_jqueryUI_sortable() {
+    wp_register_script('jquery-ui-sortable');
+    wp_enqueue_script('jquery-ui-sortable');
+}
+  

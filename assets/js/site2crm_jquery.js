@@ -1,7 +1,5 @@
-$( function() {
-    $( document ).tooltip();
-} );
+$ = jQuery;
 
 $( function() {
-    $( "#site2crm-admin-page" ).sortable();
-  } );
+    $ ( "#site2crm-admin-page" ).sortable();
+} );

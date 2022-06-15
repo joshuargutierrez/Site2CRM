@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die( '::NO INDIRECT ACCESS ALLOWED::' );
 echo '<div class="wrap"></br>';
 include 'site2CRM_logo.php';
 $dir = plugin_dir_url( __DIR__ ).'assets/images/hubspot_logo_long.png';
-echo '<h1>Site2CRM Admin Panel for Hubspot <img clsss="site2crm-admin-menu-hubspot-logo" style="position:fixed; opacity:0.4; right:1vw; bottom:13vh;" alt="" src="'.$dir.'" ></img></h1></br>';
+echo '<h1>Site2CRM Admin Panel for Hubspot <img class="site2crm-admin-menu-hubspot-logo" style="position:fixed; opacity:0.4; right:1vw; bottom:13vh;" alt="" src="'.$dir.'" ></img></h1></br>';
 echo '<hr>';
 echo '<h2>API Data</h2>';
 echo '<h4>To allow this plug-in to create leads in your Hubspot account, </br>';
